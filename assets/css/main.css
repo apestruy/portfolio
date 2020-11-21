@@ -3542,14 +3542,27 @@ body.is-preload #header.alt .logo {
   box-shadow: none;
 }
 
-#main input[type="submit"].quaternary,
-#main input[type="reset"].quaternary,
-#main input[type="button"].quaternary,
-#main button.quaternary,
-#main .button.quaternary {
+.blog-button {
+  display: inline-block;
+  width: 250px;
+  /* margin-top: 1rem; */
+  margin-right: 1rem;
+  margin-left: 1rem;
+  /* margin-bottom: 1rem; */
   background-color: #c69cc8;
   color: #ffffff !important;
   box-shadow: none;
+  font-size: 19px;
+  border-radius: 8px;
+  padding: 15px 24px;
+  border: 1px solid #c69cc8;
+  font-weight: 550;
+  transition-property: background;
+  transition-duration: 0.4s;
+}
+
+.blog-button:hover {
+  background-color: #cda9cf;
 }
 
 #main input[type="submit"].primary:hover,
@@ -3574,14 +3587,6 @@ body.is-preload #header.alt .logo {
 #main button.tertiary:hover,
 #main .button.tertiary:hover {
   background-color: #beb4d6;
-}
-
-#main input[type="submit"].quaternary:hover,
-#main input[type="reset"].quaternary:hover,
-#main input[type="button"].quaternary:hover,
-#main button.quaternary:hover,
-#main .button.quaternary:hover {
-  background-color: #cda9cf;
 }
 
 #main input[type="submit"].primary:active,
